@@ -1,0 +1,8 @@
+#!/usr/bin/env perl6
+
+sub MAIN () {
+ my  string= 'name';
+
+  print "Hello, name/n"
+    say "OK";
+}
