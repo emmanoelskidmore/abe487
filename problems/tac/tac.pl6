@@ -4,7 +4,7 @@ sub MAIN (Str $file) {
   
   die "Not a file ($file)" unless $file.IO.f;
   
-  put $file.IO.lines.reverse.join("\n")
+  say $file.IO.lines.reverse.join("\n")
  
 
 
