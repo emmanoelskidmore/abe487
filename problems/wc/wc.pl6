@@ -1,7 +1,8 @@
 #!/usr/bin/env perl6
 
 sub MAIN (Str $input) {
-  for $input.IO.lines.words.elems -> $words {
+ die "Not a file ($input)" unless $input.IO.f; 
+ for $input.IO.lines.words.elems -> $words {
      
      my $open = open $input;
      my @lines = lines $open;
