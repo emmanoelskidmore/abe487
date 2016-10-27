@@ -1,0 +1,14 @@
+#!/usr/bin/env perl6
+
+use File::Temp;
+
+
+sub MAIN (*@input) {
+  
+  for @input -> $file{
+    if $file 
+      printf "%2d", $file > .30 ?? 'burkholderia' !! 'anthrax'    #if GC is <30% then print perecent and anthrax
+
+
+  say "$open";
+}
